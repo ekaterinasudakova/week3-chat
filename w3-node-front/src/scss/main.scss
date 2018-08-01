@@ -1,0 +1,97 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+	radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+	background-size:110px 380px;
+	background-repeat:repeat-x;
+	font-family: 'Nunito Sans', sans-serif;
+	
+}
+
+
+
+
+/* 2. Content ================================= */
+
+h1{
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: .5em;
+}
+h2{
+	font-family: 'Gafata', sans-serif;
+	font-size: 1.2em;
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 1em;
+}
+.input-container{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1em;
+	color: white;
+	position: relative;
+	top: 3em;
+	display: flex;
+	justify-content: space-evenly;
+
+	.input-field-container{
+		display: flex;
+		.enter{
+			margin-right: 2em;
+			line-height: 1.25em;
+		}
+		input{
+			padding: 0.25em 2em;
+			border-radius: .5em;
+			border: transparent;
+			text-align: center;
+		}
+	}
+	.send{
+		text-transform: uppercase;
+		padding: .25em 2em;
+		border-radius: .5em;
+		border: transparent;
+		background-color: white;
+	}
+}
+.messages{
+	li{
+		font-size: 1.5em;
+		color: whitesmoke;
+		p{
+			font-size: .5em;
+			text-transform: uppercase;
+			color: lightblue;
+		}
+	}
+
+}
